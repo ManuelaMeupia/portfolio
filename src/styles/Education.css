@@ -1,0 +1,132 @@
+/* ===================== EDUCATION ===================== */
+.education {
+  position: relative;
+}
+
+/* ===== Bloc (Formations / Expériences) ===== */
+.parcours-block {
+  margin-bottom: 60px;
+}
+
+.parcours-block:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== En-tête de bloc ===== */
+.parcours-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.parcours-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(214, 51, 108, 0.08);
+  border: 1px solid rgba(214, 51, 108, 0.18);
+  border-radius: 14px;
+  color: var(--accent);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.parcours-heading h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ===== Liste de cartes ===== */
+.parcours-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* ===== Carte ===== */
+.parcours-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(214, 51, 108, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.parcours-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 18px 40px rgba(214, 51, 108, 0.12);
+}
+
+/* ===== Ligne du haut (période + lieu) ===== */
+.parcours-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.parcours-period,
+.parcours-loc {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.parcours-period {
+  background: rgba(214, 51, 108, 0.08);
+  color: var(--accent);
+}
+
+.parcours-loc {
+  background: var(--bg-soft);
+  color: var(--text-muted);
+}
+
+/* ===== Contenu de la carte ===== */
+.parcours-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.parcours-org {
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.parcours-desc {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .parcours-heading h3 {
+    font-size: 1.25rem;
+  }
+
+  .parcours-card {
+    padding: 20px;
+  }
+
+  .parcours-list {
+    grid-template-columns: 1fr;
+  }
+}

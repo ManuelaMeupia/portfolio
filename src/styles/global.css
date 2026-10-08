@@ -1,0 +1,179 @@
+/* src/styles/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #fdf6f8;                /* blanc rosé très clair */
+  --bg-soft: #fbeef2;           /* rose poudré (sections alternées) */
+  --card: #ffffff;              /* cartes blanches pures */
+  --border: #f3d6df;            /* bordure rose pâle */
+  --text: #1f1418;              /* noir prune (texte principal) */
+  --text-muted: #7a5c66;        /* brun rosé (texte secondaire) */
+  --accent: #d6336c;            /* rose fuchsia profond */
+  --accent-2: #f06292;          /* rose pêche (hover) */
+  --gradient: linear-gradient(135deg, #d6336c 0%, #f06292 100%);
+  --radius: 16px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --section-alt: #fbeef2;      /* rose poudré — sections alternées */
+  --section-white: #ffffff;
+    --grad-hero-start:      #fdf6f8;   /* crème très clair */
+  --grad-hero-end:        #fbeef2;   /* rose poudré */
+
+  --grad-skills-start:    #fbeef2;   /* suite du hero */
+  --grad-skills-end:      #ffffff;   /* blanc pur */
+
+  --grad-projects-start:  #ffffff;   /* suite du skills */
+  --grad-projects-end:    #fbeef2;   /* rose poudré */
+
+  --grad-education-start: #fbeef2;   /* suite du projects */
+  --grad-education-end:   #ffffff;   /* blanc pur */
+
+  --grad-contact-start:   #ffffff;   /* suite du education */
+  --grad-contact-end:     #fbeef2;   /* rose poudré */
+
+  --grad-footer-start:    #fbeef2;   /* suite du contact */
+  --grad-footer-end:      #f9e4eb;   /* rose plus soutenu */ 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+section {
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 60px;
+  font-size: 1.05rem;
+}
+
+/* === CTA MODERNE === */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: var(--gradient);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.4);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: #ffffff;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(198, 93, 59, 0.15);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent-2);
+  transform: translateY(-2px);
+}
+
+/* Effet fade-in au scroll */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@font-face {
+  font-family: 'Angelface';
+  src: url('../fonts/Angelface.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Alternance des fonds de section === */
+#hero {
+  background: var(--bg);           /* crème clair */
+}
+
+#skills {
+  background: var(--section-white); /* blanc pur */
+}
+
+#projects {
+  background: var(--section-alt);   /* rose poudré */
+}
+
+#education {
+  background: var(--section-white); /* blanc pur */
+}
+
+#contact {
+  background: var(--section-alt);   /* rose poudré */
+}
