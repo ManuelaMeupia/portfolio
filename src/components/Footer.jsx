@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p className="footer-copy">
+        <p className="footer-copy" style={{ fontFamily: 'LeagueSpartanR', fontWeight: '400', fontStyle: 'normal' }}>
           © {year} Manuela Meupia — Développeuse Full-Stack <FiHeart />
         </p>
       </div>

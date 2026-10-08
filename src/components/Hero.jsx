@@ -17,8 +17,12 @@ const Hero = () => {
         {/* ===== Colonne texte ===== */}
         <div className="hero-content">
           <h1 className="hero-title">
-            Bonjour, je suis <br />
-            <span className="gradient-text">Manuela Meupia</span>
+            <span className="word" style={{ '--i': 0 }}>Bonjour,</span>{' '}
+            <span className="word" style={{ '--i': 1 }}>je</span>{' '}
+            <span className="word" style={{ '--i': 2 }}>suis</span>
+            <br />
+            <span className="word gradient-text shimmer" style={{ '--i': 3 }}>Manuela</span>{' '}
+            <span className="word gradient-text shimmer" style={{ '--i': 4 }}>Meupia</span>
           </h1>
 
           <h2 className="hero-role">Developpeuse Web</h2>
