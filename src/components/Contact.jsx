@@ -1,4 +1,4 @@
-import { FiMail, FiMapPin, FiPhone, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 import '../styles/Contact.css';
 
 const Contact = () => {
@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="contact reveal">
       <div className="section-header">
         <h2 className="section-title">
-          Travaillons <span className="gradient-text">ensemble</span>
+          Travaillons <span className="gradient-ttext" style={{ fontFamily: 'DancingScript', fontSize: '4rem', color: 'var(--accent)' }}>ensemble</span>
         </h2>
         <p className="section-subtitle">
           Une question, un projet, une opportunité ? N'hésitez pas à me contacter,
@@ -45,18 +45,6 @@ const Contact = () => {
             </div>
           </li>
         </ul>
-
-        <div className="contact-socials">
-          <a href="https://github.com/manuelameupia" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <FiGithub />
-          </a>
-          <a href="https://linkedin.com/in/manuelameupia" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <FiLinkedin />
-          </a>
-          <a href="mailto:manuelameupia4@gmail.com" aria-label="Email">
-            <FiMail />
-          </a>
-        </div>
       </div>
     </section>
   );

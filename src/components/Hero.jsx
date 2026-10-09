@@ -14,7 +14,6 @@ const Hero = () => {
       <div className="hero-glow" />
 
       <div className="hero-container">
-        {/* ===== Colonne texte ===== */}
         <div className="hero-content">
           <h1 className="hero-title">
             <span className="word" style={{ '--i': 0 }}>Bonjour,</span>{' '}
@@ -22,10 +21,11 @@ const Hero = () => {
             <span className="word" style={{ '--i': 2 }}>suis</span>
             <br />
             <span className="word gradient-text shimmer" style={{ '--i': 3 }}>Manuela</span>{' '}
-            <span className="word gradient-text shimmer" style={{ '--i': 4 }}>Meupia</span>
+            <span className="word gradient-text shimmer" style={{ '--i': 4 }}>Meupia</span>{' '}
+            <span className="word gradient-text shimmer" style={{ '--i': 5 }}>Djile</span>
           </h1>
 
-          <h2 className="hero-role">Developpeuse Web</h2>
+          <h2 className="hero-role" style={{ fontFamily: 'DancingScript'}}>Developpeuse Web Full Stack</h2>
 
           <p className="hero-desc">
             Je suis une developpeuse web passionnée par la création
@@ -35,9 +35,8 @@ const Hero = () => {
             du code.
           </p>
 
-          {/* ===== Coordonnées directes ===== */}
           <div className="hero-contacts">
-            <a href="tel:+237600000000" className="hero-contact-item">
+            <a href="tel:+237678311491" className="hero-contact-item">
               <span className="hero-contact-icon">
                 <FiPhone />
               </span>
@@ -63,7 +62,6 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* ===== CTA ===== */}
           <div className="hero-cta">
             <a href="#projects" className="btn-primary">
               Voir mes projets <FiArrowRight />
@@ -73,7 +71,6 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* ===== Réseaux sociaux ===== */}
           <div className="hero-socials">
             <a
               href="https://github.com/ManuelaMeupia"
@@ -94,10 +91,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* ===== Colonne photo ===== */}
         <div className="hero-photo">
           <div className="photo-wrapper">
-            <img src="/img/profile3.jpg" alt="Manuela Meupia" />
+            <img src="/img/profile1.jpg" alt="Manuela Meupia" />
           </div>
 
           <div className="floating-card card-1">

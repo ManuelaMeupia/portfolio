@@ -76,7 +76,7 @@ const Skills = () => {
     <section id="skills" className="skills reveal">
       <div className="section-header">
         <h2 className="section-title">
-          Mes <span className="gradient-text" style={{ fontFamily: 'Angelface' , fontSize: '5rem' }}>compétences</span>
+          Mes <span className="gradient-ttext" style={{ fontFamily: 'DancingScript' , fontSize: '4rem', color: 'var(--accent)' }}>compétences</span>
         </h2>
         <p className="section-subtitle">
           Les technologies et outils que j'utilise au quotidien pour concevoir

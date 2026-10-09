@@ -47,7 +47,7 @@ const Navbar = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
           <a href="#hero" className="logo" onClick={closeMenu}>
-            Engr.<span style={{ fontFamily: 'Borel' }}>Manuela Meupia</span>
+            Engr.<span style={{ fontFamily: 'DancingScript' }}>Manuela Meupia</span>
           </a>
 
           <ul className={`nav-links ${open ? 'open' : ''}`}>

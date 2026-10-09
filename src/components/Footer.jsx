@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-brand">
           <a href="#hero" className="logo">
-            Engr.<span>Manuela Meupia</span>
+            Engr.<span style={{fontSize:' 1.35rem', fontFamily: 'DancingScript'}}>Manuela Meupia</span>
           </a>
         </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p className="footer-copy" style={{ fontFamily: 'LeagueSpartanR', fontWeight: '400', fontStyle: 'normal' }}>
-          © {year} Manuela Meupia — Développeuse Full-Stack <FiHeart />
+          © {year} Manuela Meupia Djile Développeuse FullStack <FiHeart />
         </p>
       </div>
     </footer>

@@ -41,7 +41,7 @@ const Education = () => {
     {
       role: 'Ingénieure Logicielle',
       company: 'Alpha Digital Services',
-      period: '2026-2026',
+      period: '2025-2026',
       location: 'Yaoundé-Cameroun',
       description:
         "Développement d'applications web full-stack avec React, Node.js et MongoDB. Collaboration en équipe agile et déploiement sur VPS.",
@@ -70,8 +70,8 @@ const Education = () => {
         <h2 className="section-title">
           Mon{' '}
           <span
-            className="gradient-text"
-            style={{ fontFamily: 'Angelface', fontSize: '5rem' }}
+            className="gradient-ttext"
+            style={{ fontFamily: 'DancingScript', fontSize: '4rem', color: 'var(--accent)' }}
           >
             parcours
           </span>

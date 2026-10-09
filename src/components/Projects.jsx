@@ -6,29 +6,29 @@ const Projects = () => {
     {
       title: 'Venice Hall',
       description:
-        'Courte description du projet. Explique le problème résolu, la stack utilisée et ce que tu as appris.',
+        'Venice Hall est une salle de réception moderne et élégante, pensée pour accueillir vos événements les plus prestigieux dans la ville de Yaoundé.',
       image: '/img/vh.png',
       tags: ['React js'],
       demoLink:' https://venicehall.onrender.com/',
       codeLink: 'https://github.com/alphadigitalservices237/VeniceHall',
     },
     {
-      title: 'Beverly Hills Construction',
+      title: 'Site web responsive de Beverly Hills Construction',
       description:
-        'Courte description du projet. Explique le problème résolu, la stack utilisée et ce que tu as appris.',
+        'Beverly Hills Construction est une entreprise de BTP basée à Denver, à Douala-Cameroun et à Batié; spécialisée dans la location d’engins de travaux publics',
       image: '/img/bhc.png',
-      tags: ['React js, Docker, VPS'],
+      tags: ['React js', 'Docker', 'VPS'],
       demoLink: 'https://www.beverlyhillsconstructionbtp.com/s',
       codeLink: 'https://github.com/alphadigitalservices237/beverlyhills',
     },
     {
       title: 'LaboTrack',
       description:
-        'Courte description du projet. Explique le problème résolu, la stack utilisée et ce que tu as appris.',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800',
-      tags: ['Docker', 'VPS', 'Node.js'],
-      demoLink: '#',
-      codeLink: '#',
+        'Ce projet consiste en la conception et le développement d\'une application web de gestion et de suivi des échantillons biologiques stockés dans un laboratoire. L\'application permet l\'enregistrement, la localisation précise et la consultation à distance des échantillons dans une chaîne de froid structurée (frigo, étagère, boîte à 96 positions). Elle offre ainsi une meilleure traçabilité, réduit les erreurs humaines et renforce la sécurité des données grâce à un système d\'authentification et de gestion des rôles.',
+      image: '/img/Labotrack.png',
+      tags: ['TypeScript', 'MongoDB', 'Node.js'],
+      demoLink: 'https://labotrack.onrender.com/',
+      codeLink: 'https://github.com/ManuelaMeupia/LaboTrack',
     },
   ];
 
@@ -36,7 +36,7 @@ const Projects = () => {
     <section id="projects" className="projects reveal">
       <div className="section-header">
         <h2 className="section-title">
-          Mes <span className="gradient-text" style={{ fontFamily: 'Angelface' , fontSize: '5rem' }}>projets</span>
+          Mes <span className="gradient-ttext" style={{ fontFamily: 'DancingScript' , fontSize: '4rem', color: 'var(--accent)' }}>projets</span>
         </h2>
         <p className="section-subtitle">
           Une sélection de projets personnels et académiques qui montrent
