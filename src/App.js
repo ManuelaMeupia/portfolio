@@ -17,7 +17,7 @@ function App() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // on arrête d'observer une fois visible
+            observer.unobserve(entry.target); 
           }
         });
       },
@@ -25,7 +25,7 @@ function App() {
     );
 
     els.forEach((el) => {
-      // Si l'élément est déjà dans le viewport au chargement → on rend visible direct
+     
       const rect = el.getBoundingClientRect();
       if (rect.top < window.innerHeight) {
         el.classList.add('visible');

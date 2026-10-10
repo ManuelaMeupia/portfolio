@@ -28,7 +28,6 @@
   overflow: hidden;
 }
 
-/* Effet de glow subtil au hover */
 .skill-card::before {
   content: '';
   position: absolute;
@@ -125,7 +124,6 @@
   color: var(--cat-color, var(--accent));
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .skill-card {
     padding: 22px;

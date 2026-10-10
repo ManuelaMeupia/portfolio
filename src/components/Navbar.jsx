@@ -70,7 +70,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Overlay sombre derrière le menu — cliquer dessus ferme le menu */}
       {open && (
         <div
           className="nav-overlay"

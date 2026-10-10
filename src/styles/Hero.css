@@ -1,4 +1,3 @@
-/* ===================== HERO ===================== */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -33,7 +32,6 @@
   align-items: center;
 }
 
-/* ===== Badge "disponible" (optionnel) ===== */
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -62,14 +60,12 @@
   50%      { opacity: 0.5; }
 }
 
-/* ===== Titre ===== */
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.1;
   margin-bottom: 12px;
 }
 
-/* Chaque mot apparaît en cascade */
 .hero-title .word {
   display: inline-block;
   opacity: 0;
@@ -85,7 +81,6 @@
   }
 }
 
-/* Texte en dégradé rose */
 .gradient-text {
   background: var(--gradient);
   -webkit-background-clip: text;
@@ -93,7 +88,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Effet shimmer sur le nom */
 .gradient-text.shimmer {
   background-size: 200% 100%;
   animation:
@@ -123,7 +117,6 @@
   margin-bottom: 40px;
 }
 
-/* ===== Coordonnées (téléphone + email) ===== */
 .hero-contacts {
   display: flex;
   gap: 16px;
@@ -191,7 +184,6 @@
   color: var(--text);
 }
 
-/* ===== CTA ===== */
 .hero-cta {
   display: flex;
   gap: 16px;
@@ -199,7 +191,6 @@
   margin-bottom: 40px;
 }
 
-/* ===== Réseaux sociaux ===== */
 .hero-socials {
   display: flex;
   gap: 16px;
@@ -225,7 +216,6 @@
   background: rgba(99, 102, 241, 0.08);
 }
 
-/* ===== Photo ===== */
 .hero-photo {
   position: relative;
   display: flex;
@@ -251,7 +241,6 @@
   background: var(--card);
 }
 
-/* ===== Cartes flottantes ===== */
 .floating-card {
   position: absolute;
   display: flex;
@@ -287,7 +276,7 @@
   50%      { transform: translateY(-12px); }
 }
 
-/* ===================== RESPONSIVE ===================== */
+
 @media (max-width: 960px) {
   .hero-container {
     grid-template-columns: 1fr;

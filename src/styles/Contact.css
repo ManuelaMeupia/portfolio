@@ -1,9 +1,7 @@
-/* ===================== CONTACT ===================== */
 .contact {
   position: relative;
 }
 
-/* ===== Bloc centré ===== */
 .contact-info-centered {
   max-width: 720px;
   margin: 0 auto;
@@ -28,7 +26,6 @@
   margin-bottom: 44px;
 }
 
-/* ===== Liste des infos ===== */
 .contact-details {
   list-style: none;
   display: flex;
@@ -104,7 +101,6 @@
   color: var(--accent);
 }
 
-/* ===== Réseaux sociaux ===== */
 .contact-socials {
   display: flex;
   gap: 14px;

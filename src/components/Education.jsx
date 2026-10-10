@@ -82,7 +82,6 @@ const Education = () => {
         </p>
       </div>
 
-      {/* ===== FORMATIONS ===== */}
       <div className="parcours-block">
         <div className="parcours-heading">
           <div className="parcours-icon">
@@ -111,7 +110,6 @@ const Education = () => {
         </div>
       </div>
 
-      {/* ===== EXPÉRIENCES ===== */}
       <div className="parcours-block">
         <div className="parcours-heading">
           <div className="parcours-icon">

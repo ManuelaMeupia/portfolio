@@ -1,36 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap');
 
 :root {
-  --bg: #fdf6f8;                /* blanc rosé très clair */
-  --bg-soft: #fbeef2;           /* rose poudré (sections alternées) */
-  --card: #ffffff;              /* cartes blanches pures */
-  --border: #f3d6df;            /* bordure rose pâle */
-  --text: #1f1418;              /* noir prune (texte principal) */
-  --text-muted: #7a5c66;        /* brun rosé (texte secondaire) */
-  --accent: #d6336c;            /* rose fuchsia profond */
-  --accent-2: #f06292;          /* rose pêche (hover) */
+  --bg: #fdf6f8;
+  --bg-soft: #fbeef2;
+  --card: #ffffff;
+  --border: #f3d6df;
+  --text: #1f1418;
+  --text-muted: #7a5c66;
+  --accent: #d6336c;
+  --accent-2: #f06292;
   --gradient: linear-gradient(135deg, #d6336c 0%, #f06292 100%);
   --radius: 16px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --section-alt: #fbeef2;      /* rose poudré — sections alternées */
+  --section-alt: #fbeef2;
   --section-white: #ffffff;
-    --grad-hero-start:      #fdf6f8;   /* crème très clair */
-  --grad-hero-end:        #fbeef2;   /* rose poudré */
+    --grad-hero-start:      #fdf6f8;
+  --grad-hero-end:        #fbeef2;
 
-  --grad-skills-start:    #fbeef2;   /* suite du hero */
-  --grad-skills-end:      #ffffff;   /* blanc pur */
+  --grad-skills-start:    #fbeef2;
+  --grad-skills-end:      #ffffff;
 
-  --grad-projects-start:  #ffffff;   /* suite du skills */
-  --grad-projects-end:    #fbeef2;   /* rose poudré */
+  --grad-projects-start:  #ffffff;
+  --grad-projects-end:    #fbeef2;
 
-  --grad-education-start: #fbeef2;   /* suite du projects */
-  --grad-education-end:   #ffffff;   /* blanc pur */
+  --grad-education-start: #fbeef2;
+  --grad-education-end:   #ffffff;
 
-  --grad-contact-start:   #ffffff;   /* suite du education */
-  --grad-contact-end:     #fbeef2;   /* rose poudré */
+  --grad-contact-start:   #ffffff;
+  --grad-contact-end:     #fbeef2;
 
-  --grad-footer-start:    #fbeef2;   /* suite du contact */
-  --grad-footer-end:      #f9e4eb;   /* rose plus soutenu */ 
+  --grad-footer-start:    #fbeef2;
+  --grad-footer-end:      #f9e4eb;
 }
 * {
   margin: 0;
@@ -75,7 +75,6 @@ section {
   font-size: 1.05rem;
 }
 
-/* === CTA MODERNE === */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -144,7 +143,6 @@ section {
   transform: translateY(-2px);
 }
 
-/* Effet fade-in au scroll */
 .reveal {
   opacity: 1;
   transform: translateY(0);
@@ -158,25 +156,24 @@ section {
   font-display: swap;
 }
 
-/* === Alternance des fonds de section === */
 #hero {
-  background: var(--bg);           /* crème clair */
+  background: var(--bg);
 }
 
 #skills {
-  background: var(--section-white); /* blanc pur */
+  background: var(--section-white);
 }
 
 #projects {
-  background: var(--section-alt);   /* rose poudré */
+  background: var(--section-alt);
 }
 
 #education {
-  background: var(--section-white); /* blanc pur */
+  background: var(--section-white);
 }
 
 #contact {
-  background: var(--section-alt);   /* rose poudré */
+  background: var(--section-alt);
 }
 
 
